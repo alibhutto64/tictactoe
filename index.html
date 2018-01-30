@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tic Tac Toe</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<header>
+		<h2>Tic Tac Toe Game !!!!</h2>
+	</header>
+	<div id="settings">
+			<div>
+				<p>Select Your Symbol</p>
+				<input type = "radio" value = "X" class="sym" name = "symbol" checked>
+				<label>X </label>
+				<input type = "radio" value = "O" class="sym" name = "symbol">
+				<label>O </label>
+			</div>
+			<div>
+				<p>Select Your Type</p>
+				<input type = "radio" value = "sp" class="type" name="type" checked>
+				<label>Single Player</label>
+				<input type = "radio" value = "tp" class="type" name="type">
+				<label>Two Player</label>
+			</div>
+	</div>
+	<button id="start">Start The Game!!!</button>
+	<div id="stats">
+		<div id="userWon">
+			<p>Player1 Won: </p>
+			<span>0</span>
+		</div>
+		<div id="compWon">
+			<p>Computer / Player2 Won: </p>
+			<span>0</span>
+		</div>
+	</div>
+	<div>
+		<p id="turn">Please Click "Start The Game!!!" To Start Playing</p>
+	</div>
+	<div id="game_board">
+		<div class="game_rows">
+			<div id="1">
+				<p></p>
+			</div>		
+			<div id="2">
+				<p></p>
+			</div>
+			<div id="3">
+				<p></p>
+			</div>	
+		</div>
+		<div class="game_rows">
+			<div id="4">
+				<p></p>
+			</div>
+			<div id="5">	
+				<p></p>
+			</div>
+			<div id="6">
+				<p></p>
+			</div>		
+		</div>
+		<div class="game_rows">
+			<div id="7">
+				<p></p>
+			</div>
+			<div id="8">
+				<p></p>
+			</div>
+			<div id="9">	
+				<p></p>
+			</div>
+		</div>		
+	</div>
+	<script
+			  src="http://code.jquery.com/jquery-3.2.1.js"
+			  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+			  crossorigin="anonymous"></script>
+	<script type="text/javascript" src="src/sets.js"></script>
+	<script type="text/javascript" src="engine.js"></script>
+</body>
+</html>

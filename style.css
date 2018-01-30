@@ -1,0 +1,84 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+p {
+	font-family: cursive;
+	font-size: 1.2em;
+}
+button {
+	font-size: 2em;
+	padding: 15px 25px;
+	background-color: orange;
+	margin-top: 50px;
+}
+label {
+	padding: 5px 10px;
+	font-size: 1.2em;
+	margin-top: 10px;
+}
+body {
+	background-color: #FFF7DC;
+	width: 70%;
+	margin: auto;
+	padding-top: 50px;
+	text-align: center;
+}
+body>div {
+	margin-top: 30px;
+}
+header h2 {
+	font-size: 2.5em;
+	font-family: fantasy;
+}
+#settings {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	border-bottom: 2px solid black;
+	padding-bottom: 50px;
+}
+#game_board {
+	display: flex;
+	flex-direction: column;
+	margin: 20px auto;
+	background-color: #A7C7C5;
+	padding: 5px 0;
+	flex-wrap: nowrap;
+	border: 20px solid transparent;
+	border-image: url(img/border.jpg) 50 round;
+}
+.game_rows {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.game_rows div {
+	width: 140px;
+	height: 123px;
+	background-color: #09504F;
+	padding: 5px;
+	margin-right: 2px;
+	margin-bottom: 2px;  
+	cursor: pointer;
+
+
+}
+.game_rows p {
+	font-size: 5.5em;
+}
+
+#turn {
+	width: 100%;
+	height: 50px;
+	font-size: 1.5em;
+	text-align: center;
+	background-color: yellow;
+}
+#stats {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	font-family: fantasy;
+	font-size: 1.2em;
+}
